@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Template_4335.Windows;
+using Template_4335.Class;
 
 namespace Template_4335
 {
@@ -21,6 +22,7 @@ namespace Template_4335
     /// </summary>
     public partial class MainWindow : Window
     {
+        ApplicationContext _context = new ApplicationContext();
         public MainWindow()
         {
             InitializeComponent();
@@ -48,7 +50,7 @@ namespace Template_4335
 
         private void Khantimirov_4335_Click(object sender, RoutedEventArgs e)
         {
-            Khantimirov_4335 k = new Khantimirov_4335();
+            Khantimirov_4335 k = new Khantimirov_4335(_context);
             k.Show();
     }
         private void Khusnutdinova_4335_Click(object sender, RoutedEventArgs e)

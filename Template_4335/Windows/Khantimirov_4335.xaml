@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="Khantimirov_4335" Height="450" Width="800">
     <WrapPanel>
-        <TextBlock FontSize="36" TextWrapping="Wrap">Автор - Хантимиров Айдар 4335, 19 годиков от роду </TextBlock>
-
+        <TextBlock FontSize="36" TextWrapping="Wrap" Margin="10 10 0 0">Автор - Хантимиров Айдар 4335, 19 годиков от роду </TextBlock>
+        <Button x:Name="Import_btn" Margin="10 10 0 0" Padding="5" Click="Import_btn_Click">Импорт данных(из ехеля)</Button>
+        <Button x:Name="Export_btn" Margin="10 10 0 0" Padding="5" Click="Export_btn_Click">Экспорт в Excel</Button>
+        <Button x:Name="ImportJS_btn" Margin="10 10 0 0" Padding="5" Click="ImportJS_btn_Click">Импорт данных(из жсона)</Button>
+        <Button x:Name="ExportJS_btn" Margin="10 10 0 0" Padding="5" Click="ExportJS_btn_Click">Экспорт в JSON</Button>
     </WrapPanel>
 </Window>
